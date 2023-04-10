@@ -1,0 +1,9 @@
+local.localhost {
+    tls local.crt local.key
+    reverse_proxy http://localhost:8000
+}
+
+dev.localhost {
+    tls local.crt local.key
+    reverse_proxy http://localhost:8000
+}
